@@ -6,6 +6,7 @@ namespace Programmers
     {
         static void Main(string[] args)
         {
+            #region rules
             //숫자규칙.
             //1단계 1번문제 = 101
             //1단계 15번문제 = 115
@@ -26,9 +27,10 @@ namespace Programmers
             //++++++++++++++++++++++++++
             //작성날짜.
             //느낀점.
+            #endregion
             
             Program p = new Program();
-            p.Solution_101();
+            p.Solution_102();
         }
     }
 }
