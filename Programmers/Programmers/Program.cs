@@ -11,7 +11,6 @@ namespace Programmers
             //1단계 1번문제 = 101
             //1단계 15번문제 = 115
             //3단계 3번문제 = 303
-            //1단계 1번문제 다른사람풀이 = 101_0, 101_1, 101_2, ...
             
             //info.
             //문제번호는 임의부여함.
@@ -30,7 +29,7 @@ namespace Programmers
             #endregion
             
             Program p = new Program();
-            p.Solution_102();
+            p.Solution_104();
         }
     }
 }
