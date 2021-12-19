@@ -26,13 +26,13 @@ namespace Programmers
                 answer += t;
                 return answer;
             }
-            
-            string solution_usePaddingLeft(string phone_number) {
-                string answer = phone_number.Substring(phone_number.Length - 4);
-                answer = answer.PadLeft(phone_number.Length, '*');
-                return answer;
-            }
         }
 
+        private string SolutionUsePaddingLeft(string phone_number)
+        {
+            string answer = phone_number.Substring(phone_number.Length - 4);
+            answer = answer.PadLeft(phone_number.Length, '*');
+            return answer;
+        }
     }
 }

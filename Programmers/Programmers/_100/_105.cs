@@ -26,17 +26,17 @@ namespace Programmers
 
                 return origin % haShad == 0;
             }
-            
-            bool solution_useLinq(int x) {
-                bool answer = true;
+        }
 
-                var temp = x.ToString().ToList().Select(y => int.Parse(y.ToString())).Sum();
+        private bool SolutionUseLinq(int x)
+        {
+            bool answer = true;
 
-                if (x % temp != 0)
-                    answer = false;
+            var temp = x.ToString().ToList().Select(y => int.Parse(y.ToString())).Sum();
 
-                return answer;
-            }
+            if (x % temp != 0) answer = false;
+
+            return answer;
         }
     }
 }

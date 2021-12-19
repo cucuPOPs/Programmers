@@ -15,10 +15,11 @@ namespace Programmers
             double Solution(int[] arr) {
                 return (double)arr.ToList().Sum() / arr.Length;
             }
-            
-            double Solution_Average(int[] arr) {
-                return arr.Average();
-            }
+        }
+
+        private double SolutionAverage(int[] arr)
+        {
+            return arr.Average();
         }
     }
 }

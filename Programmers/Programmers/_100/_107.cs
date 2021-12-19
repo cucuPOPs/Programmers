@@ -37,16 +37,18 @@ namespace Programmers
                     return -1;
                 return count;
             }
-            
-            int solution_useFor(int num) {
-                long lNum = num;//long num 이 네이밍이 더 좋네.
-                for (int i = 0; i < 500; i++)
-                {
-                    if (lNum == 1) return i;
-                    lNum = lNum % 2 == 0 ? lNum / 2 : lNum * 3 + 1;                        
-                }
-                return -1;        
+        }
+
+        private int SolutionUseFor(int num)
+        {
+            long lNum = num; //long num 이 네이밍이 더 좋네.
+            for (int i = 0; i < 500; i++)
+            {
+                if (lNum == 1) return i;
+                lNum = lNum % 2 == 0 ? lNum / 2 : lNum * 3 + 1;
             }
+
+            return -1;
         }
     }
 }
