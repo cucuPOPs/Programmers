@@ -15,6 +15,8 @@ namespace Programmers
 
         public void Solution_304()
         {
+            Console.WriteLine(Solution(4));//5
+            Console.WriteLine(Solution(3));//3
             long Solution(int n)
             {
                 int one_step = 1;
