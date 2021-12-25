@@ -11,6 +11,10 @@ namespace Programmers
         //Short code를 위해, 검색함 ㅎ.
         public void Solution_113()
         {
+            foreach (int n in Solution(1234))
+            {
+                Console.Write($"{n} ,");
+            }
             int[] Solution(long n)
             {
                 char[] a = n.ToString().ToCharArray();

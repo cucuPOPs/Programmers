@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 namespace Programmers
 {
@@ -7,14 +8,16 @@ namespace Programmers
         //문자열 내 마음대로 정렬하기.
         //++++++++++++++++++++++++++
         //2021-12-25.
-        //.
+        //linq 사용하면, 엄청 간결해질수 있음을 깨달음.
+        
         public void Solution_124()
         {
-            string[] result = solution_3(new string[] {"abce", "abcd", "cdx"}, 2);
+            string[] result = solution(new string[] {"abce", "abcd", "cdx"}, 2);
             foreach (string s in result)
             {
                 Console.WriteLine(s);
             }
+            
             //
             string[] solution(string[] strings, int n)
             {
@@ -45,7 +48,7 @@ namespace Programmers
         }
         string[] solution_3(string[] strings, int n)
         {
-            return strings.ToList().OrderBy(x => x[n]).ThenBy(x=> x).ToArray();
+            return strings.OrderBy(x => x[n]).ThenBy(x=> x).ToArray();
         }
     }
 }
