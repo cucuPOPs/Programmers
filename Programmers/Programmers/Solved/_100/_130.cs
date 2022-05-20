@@ -11,15 +11,18 @@ namespace Programmers
         public void Solution_130()
         {
             int result = solution(new int[,] {{14, 4}, {19, 6}, {6, 16}, {18, 7}, {7, 11}});
-            Console.WriteLine(result);//133
+            Console.WriteLine(result); //133
+
             //
             int solution(int[,] sizes)
             {
                 int xMax = 0, yMax = 0;
                 for (int i = 0; i < sizes.GetLength(0); i++)
                 {
-                    (int x, int y) temp = (sizes[i, 0], sizes[i, 1]);
-                    (sizes[i, 0], sizes[i, 1])  = (Math.Min(temp.x, temp.y), Math.Max(temp.x, temp.y));
+                    int x = sizes[i, 0];
+                    int y = sizes[i, 1];
+                    sizes[i, 0] = Math.Min(x,y);
+                    sizes[i, 1] = Math.Max(x,y);
                     xMax = Math.Max(xMax, sizes[i, 0]);
                     yMax = Math.Max(yMax, sizes[i, 1]);
                 }
