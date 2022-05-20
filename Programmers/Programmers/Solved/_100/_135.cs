@@ -15,7 +15,7 @@ namespace Programmers
             Console.WriteLine(solution(new int[]{1,2,3}));
             int solution(int[] numbers)
             {
-                return 55 - numbers.Sum();
+                return 45 - numbers.Sum();
             }
         }
     }
