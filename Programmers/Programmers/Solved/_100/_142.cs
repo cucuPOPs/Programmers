@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Programmers
 {
@@ -11,21 +12,23 @@ namespace Programmers
         //%1 미쳐따리.. 정수판별
         public void Solution_142()
         {
-            //
+            
             int solution(int left, int right)
             {
+                List<int> list = new List<int>();
+                //제곱수 리스트 구하기
+                for (int i = 1; i * i <= 1000; i++)
+                {
+                    list.Add(i * i);
+                }
+
+
                 int sum = 0;
                 for (int i = left; i <= right; i++)
                 {
-                    if(isSquare(i))
-                    {
-                        sum += i;
-                    }
-                    else
-                    {
-                        sum -= i;
-                    }
+                    sum += list.Contains(i) ? -i : i;
                 }
+
                 return sum;
             }
 
