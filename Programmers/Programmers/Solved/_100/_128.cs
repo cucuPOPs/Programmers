@@ -17,10 +17,8 @@ namespace Programmers
             //
             long solution(int price, int money, int count)
             {
-                long answer = count * (price + price * count) / 2;
-                return answer - money < 0 ? 0 : answer - money;
-                //wow.
-                //return Math.Max(0, answer - money);
+                long answer = count * (price * ((long)count+1)) / 2;
+                return Math.Max(0, answer - money);
             }
         }
     }
