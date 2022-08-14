@@ -9,7 +9,7 @@ namespace Programmers
         //기능개발.
         //++++++++++++++++++++++++++
         //2022.08.14.
-        //흠...
+        //흠...나중에 다시 풀어보자...
         public void Solution_204()
         {
             var result = solution(new int[] {93, 30, 55}, new int[] {1, 30, 5});
