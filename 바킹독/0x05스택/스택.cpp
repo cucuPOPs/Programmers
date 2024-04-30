@@ -32,7 +32,7 @@ int main()
 		}
 		else if (op == "empty")
 		{
-			cout << (int)s.empty() << '\n';
+			cout << (int)s.empty() << '\n';//비어있으면 1, 아니면 0.
 		}
 		else if (op == "pop")
 		{
