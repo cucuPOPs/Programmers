@@ -12,24 +12,19 @@ int main()
 	stack<int> s;
 	while (n--)
 	{
-		int height;
-		cin >> height;
+		int h;
+		cin >> h;
 
-		while (!s.empty())
-		{
-			if (s.top() <= height)
-			{
-				s.pop();
-			}
-			else break;
-		}
-		sum += s.size();
+		// h이상이면 모두제거..
+		while (!s.empty() && s.top() <= h)
+			s.pop();
+		s.push(h);
 
-		s.push(height);
+		sum += s.size() - 1;
 	}
 	cout << sum;
 }
 
 /*
-* sum변수의 overflow가능성->int 에서, long long으로.
-*/
+ * sum변수의 overflow가능성->int 에서, long long으로.
+ */
