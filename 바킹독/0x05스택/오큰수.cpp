@@ -1,4 +1,6 @@
 ﻿// 17298번: 오큰수
+//문제해석: 오큰수를 구하라.
+
 #include <bits/stdc++.h>
 using namespace std;
 int a[1000000];

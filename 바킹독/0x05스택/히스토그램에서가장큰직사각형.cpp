@@ -15,7 +15,8 @@ int main()
 	{
 		int n;
 		cin >> n;
-		if (n == 0) break;
+		if (n == 0)
+			break;
 
 		stack<Bar> s;
 		long long result = 0;
@@ -24,13 +25,18 @@ int main()
 			int h;
 			cin >> h;
 			int idx = i;
+
+			// 왼큰같수들을 pop한다. 스택은 오름차순이 된다.
 			while (!s.empty() && s.top().height >= h)
 			{
 				result = max(result, (i - s.top().startIndex) * s.top().height);
 				idx = s.top().startIndex;
 				s.pop();
 			}
-			s.push({ h,idx });
+
+			// 이때, top은 왼작수.
+
+			s.push({h, idx});
 		}
 
 		while (!s.empty())
@@ -41,3 +47,5 @@ int main()
 		cout << result << '\n';
 	}
 }
+
+// stack<높이, 처음등장위치>

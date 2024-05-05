@@ -1,4 +1,5 @@
 ﻿// 2493번: 탑
+// 문제: 왼큰수의 위치를 출력하라.
 #include <bits/stdc++.h>
 using namespace std;
 stack<pair<int, int>> s;
