@@ -26,7 +26,7 @@ int main(void)
     cin >> h;
     int cnt = 1;
 
-    //왼작같수들을 pop한다.
+    //h입장에서 top이 왼작같수이면 pop한다.
     //스택은 내림차순이 된다.
     while (!S.empty() && S.top().X <= h)
     {

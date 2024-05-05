@@ -1,4 +1,5 @@
 ﻿// 10773번: 제로
+// 문제요약: 0을외치면 pop.
 #include <bits/stdc++.h>
 using namespace std;
 int main()

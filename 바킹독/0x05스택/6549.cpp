@@ -26,7 +26,7 @@ int main()
 			cin >> h;
 			int idx = i;
 
-			// 왼큰같수들을 pop한다. 스택은 오름차순이 된다.
+			// h가 top보다 작거나 같으면 계산한다. 스택은 오름차순이 된다.
 			while (!s.empty() && s.top().height >= h)
 			{
 				result = max(result, (i - s.top().startIndex) * s.top().height);
