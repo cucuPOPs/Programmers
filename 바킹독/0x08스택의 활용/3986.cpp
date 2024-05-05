@@ -1,4 +1,5 @@
 ﻿// 3986번: 좋은 단어
+// 문제해석: AABB=> AA 제거. BB제거.
 #include <bits/stdc++.h>
 using namespace std;
 int main()
