@@ -50,6 +50,7 @@ int main()
 					isWrong = true;
 					break;
 				}
+				//c=='D' //버리기
 				if (!rev)
 					dq.pop_front();
 				else

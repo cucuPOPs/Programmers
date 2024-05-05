@@ -1,4 +1,5 @@
 ﻿// 11003번: 최솟값 찾기
+// 문제해석: 본인포함해서 왼쪽으로 L개중에 최소값을 출력.
 #include <bits/stdc++.h>
 using namespace std;
 struct Data
